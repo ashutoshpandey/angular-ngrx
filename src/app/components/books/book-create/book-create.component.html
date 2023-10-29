@@ -1,0 +1,10 @@
+<a routerLink="/book/list">List</a>
+<hr />
+
+Id: <input type='text' [(ngModel)]="book.id" /><br /><br />
+Name: <input type='text' [(ngModel)]="book.name" /><br /><br />
+<button (click)="createBook()">Create</button>
+
+<br /><br />
+
+{{message}}

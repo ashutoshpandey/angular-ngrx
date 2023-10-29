@@ -1,0 +1,17 @@
+<a routerLink="/book/create">Create</a>
+<hr />
+
+<h1>Books</h1>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Email</td>
+        <td></td>
+    </tr>
+    <tr *ngFor="let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td><button (click)="removeBook(book)">Remove</button></td>
+    </tr>
+</table>
